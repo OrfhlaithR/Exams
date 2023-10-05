@@ -1,0 +1,32 @@
+#Question 1
+#Student Name: Orfhlaith Ryan
+
+taylorSwiftSongs = ["Love Story", "Blank Space", "Shake It Off", "Bad Blood", "Delicate", "You Belong With Me", "Wildest Dreams", "Red", "All Too Well", "22"] #part a
+
+song = input("Please enter a Taylor Swift song:") #part b
+
+
+if song not in taylorSwiftSongs:
+    print("Sorry, the song," ,song, "is not in Taylor Swift's song list.")
+    
+else:
+    position = taylorSwiftSongs.index(song)
+    length = len(taylorSwiftSongs)
+    print("The song" ,song, "is in the list at position" ,position, "out of" ,length, "songs.") #lines 9-15 are ,y answers to part c
+
+
+
+
+#Question 2
+#Student Name: Orfhlaith Ryan
+
+print("Welcome to Temperature Alert System")  #this is the first part to the question
+
+temp = int(input("Please enter a temperature in degrees Celsius")) #this is the second part to the question
+
+if temp <20:
+    print("Too cold. Turn up heating.")
+elif temp <25:
+    print("Temperature is just right.")
+else:
+    print("Too warm. Turn down heating.") #lines 7-12 are for the last part of the question
