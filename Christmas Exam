@@ -1,0 +1,60 @@
+#Student Name = Orfhlaith Ryan
+num1 = int(input("Enter the first number:"))
+num2 = int(input("Enter the second number:")) #lines 2 and 3 are my answers to (iv)
+print("This calculator can only add and subtract") #answer to (i)
+name = input("Please enter your name: ") #answer to (ii)
+print("Hello" ,name,"\n Welcome to the addition and subtraction calculator") #answer to (iii)
+print('Do you want me to (a)dd or (s)ubtract?')
+choice = input()
+
+if choice == 'a':
+    total = num1 + num2
+    print (num1, "+" ,num2, "=" ,total)
+elif choice == 'A':
+    total = num1 + num2
+    print (num1, "+" ,num2, "=" ,total)
+elif choice == 's':
+    total = num1 - num2
+    print (num1, "-" ,num2, "=" ,total)
+elif choice == 'S': #lines 13 and 19 are my answers to (vi)
+    total = num1 - num2
+    print (num1, "-" ,num2, "=" ,total) #lines 11, 12, 14, 15, 17, 18, 20 and 21 are my answers to (v)
+
+else:
+    print('Do you want me to (a)dd or (s)ubtract?')
+    choice = input()
+    while choice != 'a' or 's' or 'A' or 'S':
+        print("Invalid option.") #answer to (vii)
+user = input('Do you want me to (a)dd or (s)ubtract?')
+
+
+  #Question 2
+  # Student Name = Orfhlaith Ryan
+
+squared_numbers = [1**2, 2**2, 3**2, 4**2, 5**2, 6**2, 7**2, 8**2, 9**2, 10**2, 11**2, 12**2, 13*2, 14**2, 15**2, 16**2, 17**2, 18**2, 19**2, 20**2] #answer (i)
+for (i) in range(1): #answer (i)
+    squared_numbers = []
+    squared_numbers.append(1*1)
+    squared_numbers.append(2*2)
+    squared_numbers.append(3*3)
+    squared_numbers.append(4*4)
+    squared_numbers.append(5*5)
+    squared_numbers.append(6*6)
+    squared_numbers.append(7*7)
+    squared_numbers.append(8*8)
+    squared_numbers.append(9*9)
+    squared_numbers.append(10*10)
+    squared_numbers.append(11*11)
+    squared_numbers.append(12*12)
+    squared_numbers.append(13*13)
+    squared_numbers.append(14*14)
+    squared_numbers.append(15*15)
+    squared_numbers.append(16*16)
+    squared_numbers.append(17*17)
+    squared_numbers.append(18*18)
+    squared_numbers.append(19*19)
+    squared_numbers.append(20*20)
+    
+print(squared_numbers) #answer (ii)
+user = int(input("Which squared number will I display (1-20)?:"))
+print(squared_numbers.remove(user))
