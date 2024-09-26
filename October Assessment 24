@@ -1,0 +1,73 @@
+# Question 1 (a)
+# Student name: Orfhlaith Ryan
+
+print("This program can find the perimeter or area of a quadrilateral") #(i)
+length = float(input("Please enter the length: "))
+width = float(input("Please enter the width: ")) #(iii)
+
+
+name = input("Please enter your user name: ") #(ii)
+choice = input("Do you want to find the (p)erimeter or (a)rea? ")
+if choice == "p":
+    perimeter = round((2*length) + (2*width),2) #(vi)
+    print(round(perimeter,2)) #(iv)
+    print("A quadrilateral with a length of", length, "and a width of", width, "has a perimeter of: ",perimeter) #(v)
+elif choice == "a":
+    print(round(length*width,2)) #(iv)
+    area = round(length*width,2)
+    print("A quadrilateral with a length of", length, "and a width of", width, "has an area of: ",area) #(v)
+print("Thank you for using the program", name) #(ii)
+
+
+
+
+# Question 1 (b)
+# Student name:  Orfhlaith Ryan
+
+import random
+
+computer_options = ["rock", "paper", "scissors"]
+choice = input("Enter rock, paper or scissors: ") #(i)
+print("Player chose: ",choice)
+computer_choice = computer_options [random.randint(0,2)]
+print("Computer chose: ",computer_choice)
+
+if choice == "rock": #(ii)
+    if computer_choice == "paper":
+        print("Computer wins")
+    elif computer_choice == "scissors":
+        print("Player wins")
+    else:
+        print("Draw!")
+elif choice == "paper":
+    if computer_choice == "scissors":
+        print("Computer wins")
+    elif computer_choice == "rock":
+        print("Player wins")
+    else:
+        print("Draw!")
+elif choice == "scissors":
+    if computer_choice == "rock":
+        print("Computer wins")
+    elif computer_choice == "paper":
+        print("Player wins")
+    else:
+        print("Draw!")
+
+
+
+# Question 2
+# Student name: Orfhlaith Ryan
+
+def tickets(revenue):
+    print("Total revenue: €",revenue)
+    
+vip_sold = int(input("How many VIP tickets sold? "))
+regular_sold = int(input("How many Regular tickets sold? "))
+budget_sold = int(input("How many Budget tickets sold? "))
+total_vip = 150*vip_sold
+total_regular = 75*regular_sold
+total_budget = 40*budget_sold
+
+
+tickets(total_vip+total_regular+total_budget)
