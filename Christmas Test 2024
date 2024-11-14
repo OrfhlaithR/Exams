@@ -1,0 +1,51 @@
+#Question 1
+#Name: Orfhlaith Ryan
+import random
+from random import choice
+
+fruits = ['apple', 'cherry', 'orange']
+apple = 0
+cherry = 0
+orange = 0
+
+random_fruit_1 = choice(fruits)
+random_fruit_2 = choice(fruits)#ii
+random_fruit_3 = choice(fruits)#ii
+print("Random Fruit 1:",random_fruit_1) #i
+print("Random Fruit 2:",random_fruit_2) #ii
+print("Random Fruit 3:",random_fruit_3) #ii
+
+if random_fruit_1 == "cherry":
+    print("\nFirst fruit is cherry")#iii
+if random_fruit_1 == random_fruit_2:
+    print("First pair match") #iv
+    if random_fruit_1 == "cherry" and random_fruit_2 == "cherry":
+        print("First pair are cherries") #v
+if random_fruit_1 == random_fruit_2:
+    print("Matching pair")
+elif random_fruit_1 == random_fruit_3:
+    print("Matching pair")
+elif random_fruit_2 == random_fruit_3:
+    print("Matching pair")
+
+for x in range(100): #vii (this gave me grief for about 10 minutes omg T_T) also I have no idea if the answer should be so long, sorry if I made it long winded
+    random = choice(fruits)
+    if random == "apple":
+        apple = apple + 1
+        apple = apple 
+    if random == "cherry":
+        cherry = cherry + 1
+        cherry = cherry 
+    if random == "orange":
+        orange = orange + 1
+        orange = orange
+print("apple", apple)
+print("cherry", cherry)
+print("orange", orange)
+
+
+print("Split Bill Calculator")
+bill = int(input("How much is the bill?: "))
+people = int(input("How many people?: "))
+owedMoney = bill/people
+print("You each owe", round(owedMoney, 2))
